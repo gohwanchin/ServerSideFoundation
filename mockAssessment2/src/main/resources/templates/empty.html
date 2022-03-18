@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck</title>
+</head>
+
+<body>
+    <form action="#" th:action="@{'/deck/'+${deck.id}}" method="post">
+        <table>
+            <tr>
+                <td></td>
+                <td>
+                    <p>Remaining cards: <span th:text="${deck.remaining}"></span></p>
+                    <select id="draw" name="draw">
+                        <option value="0">0</option>
+                    </select>
+                    <button type="submit" disabled>Draw</button>
+                </td>
+            </tr>
+            <tr>
+                <td th:each="card:${deck.cards}">
+                    <img th:src="${card.image}">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
