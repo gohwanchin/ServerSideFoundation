@@ -8,13 +8,16 @@
 </head>
 
 <body>
+    <h1>Currency Exchange</h1>
     <form action="/convert" method="get">
         <p><select name="fromCurrency" id="fromCurrency">
-                <option th:each="curr, iStat : ${currList}" th:value="${iStat.index}" th:text="${curr.name + ' ' + curr.symbol}">
+                <option th:each="curr, iStat : ${currList}" th:value="${iStat.index}"
+                    th:text="${curr.name + ' ' + curr.symbol}">
                 </option>
             </select></p>
         <p><select name="toCurrency" id="toCurrency">
-                <option th:each="curr, iStat : ${currList}" th:value="${iStat.index}" th:text="${curr.name + ' ' + curr.symbol}">
+                <option th:each="curr, iStat : ${currList}" th:value="${iStat.index}"
+                    th:text="${curr.name + ' ' + curr.symbol}">
                 </option>
             </select></p>
         <p><input type="number" name="amt" id="amt"></p>
