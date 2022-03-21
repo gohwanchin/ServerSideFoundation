@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <form action="/convert" method="get">
+        <p><select name="fromCurrency" id="fromCurrency">
+                <option th:each="curr, iStat : ${currList}" th:value="${iStat.index}" th:text="${curr.name + ' ' + curr.symbol}">
+                </option>
+            </select></p>
+        <p><select name="toCurrency" id="toCurrency">
+                <option th:each="curr, iStat : ${currList}" th:value="${iStat.index}" th:text="${curr.name + ' ' + curr.symbol}">
+                </option>
+            </select></p>
+        <p><input type="number" name="amt" id="amt"></p>
+        <p><input type="submit" value="Convert"></p>
+    </form>
+</body>
+
+</html>
