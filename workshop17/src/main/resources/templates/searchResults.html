@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${search}"></title>
+</head>
+
+<body>
+    <h1 th:text="${search}"></h1>
+    <tr th:each="photo: ${photos}">
+        <img th:src="${photo}">
+    </tr>
+</body>
+
+</html>
