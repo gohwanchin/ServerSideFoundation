@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+</head>
+<body th:object="${book}">
+    <h1>Book Information</h1>
+    <p>ID: <p th:text="*{id}"></p></p>
+    <p>Title: <p th:text="*{title}"></p></p>
+    <p>Author: <p th:text="*{author}"></p></p>
+    <!-- Cover location in format /thumbnails/cover.jpg -->
+    <p>Cover: <img th:src="@{*{cover}}"></p></p>
+</body>
+</html>

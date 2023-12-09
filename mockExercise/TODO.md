@@ -1,0 +1,12 @@
+- [x] Separate pagination and search functions
+- [x] Search by author
+- [x] Custom sort
+- [x] Title and author search page
+- [x] Sort buttons
+- [x] Show cover thumbnails
+- [x] Make search case insensitive
+- [x] Test Redis Cloud
+- [x] Add dropdown to adjust pagination size - use onchange.submit()
+- [ ] Use PagingandSorting Repository - create separate interface that extends it
+- [ ] Fix page number formatting
+- [ ] Image upload

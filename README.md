@@ -4,7 +4,9 @@
 |--------------------------------|------------------------|----------------------------|
 | Mock Assessment                | Calculator             | Calculator REST Controller |
 | Mock Assessment 2              | Deck of Cards API      |                            |
+| Mock Exercise                  | Library                |                            |
 | Revision 2                     | Calculator             |                            |
+| SSF Assessment                 | Purchase Order         |                            |
 | Workshop 11                    | Command Line Arguments |                            |
 | Workshop 13                    | Addressbook            | Using local file database  |
 | Workshop 14                    | Addressbook            | Using Redis database       |
